@@ -1,1 +1,6 @@
-
+{
+  "latestVersionCode": 2,
+  "apkUrl": "https://github.com/khemrajmeghwal999-cell/MyExamPreparation/releases/download/v1.1/MyExamPreparation-v1.1.apk",
+  "releaseNotes": "My Exam Preparation v1.1 - OTA update test release.",
+  "forceUpdate": false
+}
