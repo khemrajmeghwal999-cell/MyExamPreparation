@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - My Exam Preparation</title>
+    <style>
+        :root {
+            --primary-color: #3b6fe0;
+            --text-color: #1f2937;
+            --secondary-text: #4b5563;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #60a5fa;
+                --text-color: #f3f4f6;
+                --secondary-text: #9ca3af;
+                --bg-color: #111827;
+                --card-bg: #1f2937;
+                --border-color: #374151;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 20px;
+        }
+
+        .header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 24px 0;
+            margin-bottom: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .header .container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: var(--secondary-text);
+            margin: 0;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        p, li {
+            color: var(--secondary-text);
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-color);
+        }
+
+        .contact-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--secondary-text);
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1>My Exam Preparation</h1>
+            <p class="effective-date"><strong>Effective Date:</strong> September 23, 2026</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>My Exam Preparation</strong>. We respect your privacy and are committed to protecting any information associated with your use of our Android application ("App"). This Privacy Policy explains how information is handled when you use our App.</p>
+            <p>My Exam Preparation is designed primarily as an offline-first educational study app with optional cloud backup and synchronized question bank features.</p>
+        </div>
+
+        <div class="card">
+            <h2>2. Local Data Storage on Your Device</h2>
+            <p>The App stores certain study data locally on your device using Android's private <code>SharedPreferences</code> and internal file storage. This data includes:</p>
+            <ul>
+                <li><strong>Study Progress & Quiz History:</strong> Your test attempts, completed quiz sets, scores, and wrong answers for review.</li>
+                <li><strong>Bookmarks & Notes:</strong> Questions you save for practice and study notes you create.</li>
+                <li><strong>Study Goals & Streaks:</strong> Your daily study target, streak counter, and streak history.</li>
+                <li><strong>App Preferences:</strong> Your selected app language (Hindi/English) and theme preference (Light/Dark/System).</li>
+                <li><strong>Ad Cooldown Timestamps:</strong> Local timestamp markers to ensure ad frequency limits (such as a 30-minute interval between interstitial ads) are respected across app restarts.</li>
+            </ul>
+            <p>All locally stored data remains stored in private app storage on your device unless you clear app data, uninstall the App, or explicitly perform a cloud backup.</p>
+        </div>
+
+        <div class="card">
+            <h2>3. Google Services & Cloud Integration</h2>
+            <p>The App integrates specific official Google services to provide optional backup, question synchronization, and advertising functions:</p>
+
+            <h3>A. Google Sign-In & Google Drive (Optional)</h3>
+            <p>If you choose to sign in with your Google Account, the App uses official Google Play Services Authentication to enable optional features:</p>
+            <ul>
+                <li><strong>Personal Backup & Restore:</strong> Uploads or restores your encrypted test history and bookmarks to your private Google Drive storage. The App only requests access to files created by the App itself (<code>drive.file</code> / <code>drive.appdata</code> scopes) and cannot access your other personal Google Drive files.</li>
+                <li><strong>Master Question Bank Sync:</strong> Connects to a central Google Drive Master Question Bank file to update and download new study questions.</li>
+            </ul>
+
+            <h3>B. Google AdMob (Advertising)</h3>
+            <p>The App uses <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display banner and interstitial advertisements:</p>
+            <ul>
+                <li>AdMob may collect and process device identifiers (such as Advertising ID), IP address, coarse location data, and app interaction metrics to serve and measure advertisements.</li>
+                <li>Ads are served according to Google's AdMob policies. For users in the European Economic Area (EEA), United Kingdom, and Switzerland, advertising is conducted in compliance with applicable European privacy and consent guidelines.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>4. Over-The-Air (OTA) Updates</h2>
+            <p>The App includes an automated version check feature to inform you when a newer version of the App is available:</p>
+            <ul>
+                <li>On app startup or manual request, the App performs an HTTPS GET request to check a <code>version.json</code> file hosted on a public GitHub repository.</li>
+                <li>No personal user identifiers are sent during version checks.</li>
+                <li>When an update is accepted, the file is downloaded using the standard Android system <code>DownloadManager</code> to the app's internal downloads directory, and opened via Android's package installer upon your explicit action.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>5. Third-Party Services Summary</h2>
+            <p>The App only integrates third-party SDKs that are strictly necessary for its functionality. We do <strong>not</strong> include any third-party analytics (such as Firebase Analytics or Facebook SDK), crash reporting SDKs, or social tracking frameworks. The integrated services are:</p>
+            <ul>
+                <li><strong>Google Play Services Auth:</strong> User authentication for optional Google Drive backup (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</li>
+                <li><strong>Google Drive REST API:</strong> Private app backup and question synchronization.</li>
+                <li><strong>Google Mobile Ads SDK (AdMob):</strong> Advertisement serving (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ad Technologies</a>).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>6. Data Retention & Security</h2>
+            <p>We do not operate external user tracking databases. Your personal study progress remains on your local device or within your personal Google Drive account. We maintain security by utilizing official Android system APIs, encrypted HTTPS network connections for updates, and restricted Google Drive authorization scopes.</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Your Data Rights & Choices</h2>
+            <p>You maintain full control over your data within the App:</p>
+            <ul>
+                <li><strong>Local Data Removal:</strong> You can clear all local study data at any time by uninstalling the App or clearing App Storage in your Android system settings.</li>
+                <li><strong>Account Disconnection:</strong> You can sign out of your Google Account in the App Settings screen at any time.</li>
+                <li><strong>Advertising ID Reset:</strong> You can reset or opt out of personalized ads via your Android device settings (<em>Settings &gt; Google &gt; Ads</em>).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>8. Children's Privacy</h2>
+            <p>Our App is an educational preparation tool designed for general audiences and student examination preparation. We do not knowingly collect personal identifiable information from children under 13 years of age.</p>
+        </div>
+
+        <div class="card">
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time to reflect app updates or regulatory changes. Any updates will be posted on this page with a revised Effective Date.</p>
+        </div>
+
+        <div class="card">
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding this Privacy Policy or app privacy practices, please contact us at:</p>
+            <div class="contact-box">
+                <p><strong>Privacy Contact:</strong> <a href="mailto:khemrajmeghwal999@gmail.com">khemrajmeghwal999@gmail.com</a></p>
+                <p><strong>App:</strong> My Exam Preparation</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; My Exam Preparation. All rights reserved.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
